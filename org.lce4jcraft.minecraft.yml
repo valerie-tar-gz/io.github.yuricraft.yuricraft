@@ -14,7 +14,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/4jcraft/4jcraft
-        commit: de924fee0daf62556f1e655fec83ffb61d0fbf41
+        branch: dev
 
   - name: wrapper
     buildsystem: simple
