@@ -14,8 +14,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/4jcraft/4jcraft
-        branch: feat/iggy-dev
-        commit: 3c066dcff831f35196cadc1c16ae6c421b464869
+        commit: de924fee0daf62556f1e655fec83ffb61d0fbf41
 
   - name: wrapper
     buildsystem: simple
