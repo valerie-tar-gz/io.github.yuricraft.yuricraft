@@ -1,18 +1,10 @@
-on:
-  push:
-    branches: [main]
-  schedule:
-    - cron: "05 10 * * *" # 10:05am UTC everyday
-  pull_request:
-name: Build all
+name: Build aarch64
 jobs:
   flatpak:
     name: "Flatpak"
     strategy:
       matrix:
         variant:
-          - arch: x86_64
-            runner: ubuntu-latest
           - arch: aarch64
             runner: ubuntu-24.04-arm
     runs-on: ${{ matrix.variant.runner }}
