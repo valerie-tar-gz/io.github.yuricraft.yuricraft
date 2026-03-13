@@ -1,10 +1,10 @@
 on:
-  workflow_dispatch
   push:
     branches: [main]
   schedule:
     - cron: "05 10 * * *" # 10:05am UTC everyday
   pull_request:
+    workflow_dispatch
 name: Build all
 jobs:
   flatpak:
