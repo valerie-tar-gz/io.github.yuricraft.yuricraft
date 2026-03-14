@@ -19,6 +19,8 @@ modules:
       - '--prefix=/app/share'
     modules:
       - shared-modules/glu/glu-9.json
+    post-install:
+      - install -Dm755 /app/share/Minecraft.Client /app/bin/Minecraft.Client
 
     sources:
       - type: git
@@ -28,7 +30,6 @@ modules:
   - name: scripts
     buildsystem: simple
     build-commands:
-      - install -Dm755 /app/share/Minecraft.Client /app/bin/Minecraft.Client
       - install -Dm755 4jcraft-wrapper.sh /app/bin/4jcraft
       - >-
         install -Dm644 org.lce4jcraft.minecraft.desktop
