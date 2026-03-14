@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+
+Name=4jcraft
+Comment=Minecraft Legacy Console edition ported to other systems
+Categories=Game;AdventureGame;
+
+Icon=4jcraft
+Exec=4jcraft
+Terminal=false

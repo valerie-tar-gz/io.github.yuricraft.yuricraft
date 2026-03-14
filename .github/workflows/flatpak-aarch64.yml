@@ -19,7 +19,7 @@ jobs:
         submodules: recursive
     - uses: flatpak/flatpak-github-actions/flatpak-builder@v6
       with:
-        bundle: minecraft.flatpak
-        manifest-path: org.lce4jcraft.minecraft.yml
+        bundle: io.github.yuricraft.yuricraft.flatpak
+        manifest-path: io.github.yuricraft.yuricraft.yml
         cache-key: flatpak-builder-${{ github.sha }}
         arch: ${{ matrix.variant.arch }}

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>io.github.yuricraft.yuricraft</id>
+  
+  <name>4jcraft</name>
+  <summary>Minecraft Legacy Console edition ported to other systems</summary>
+  
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>No license</project_license>
+  
+  <description>
+    <p>
+      4JCraft is a modified version of the Minecraft Console Legacy Edition aimed on porting old Minecraft to different platforms (such as Linux, Android, Emscripten, etc.) and refactoring the codebase to improve organization and use modern C++ features.
+    </p>
+  </description>
+  
+  <launchable type="desktop-id">io.github.yuricraft.yuricraft.desktop</launchable>
+</component>
