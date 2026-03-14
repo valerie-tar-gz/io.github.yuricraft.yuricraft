@@ -10,6 +10,7 @@ jobs:
   flatpak:
     name: "Flatpak"
     strategy:
+      fail-fast: false
       matrix:
         variant:
           - arch: x86_64
