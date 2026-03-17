@@ -15,9 +15,6 @@ modules:
   - name: 4jcraft
     buildsystem: meson
     builddir: false
-    config-opts:
-      - '--prefix=/app/share'
-
     sources:
       - type: git
         url: 'https://github.com/4jcraft/shiggy'
@@ -36,7 +33,7 @@ modules:
     sources:
       - type: git
         url: 'https://github.com/4jcraft/4jcraft'
-        branch: feat/iggy-dev
+        commit: 22d814ccaff577b9a50893031e3265618c6bbf86
 
   - name: scripts
     buildsystem: simple
