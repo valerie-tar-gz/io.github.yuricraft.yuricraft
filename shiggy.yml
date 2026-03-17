@@ -1,0 +1,7 @@
+name: shiggy
+buildsystem: meson
+builddir: false
+sources:
+  - type: git
+    url: 'https://github.com/4jcraft/shiggy'
+    branch: main

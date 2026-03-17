@@ -11,17 +11,6 @@ finish-args:
   - '--socket=pulseaudio'
   - '--device=dri'
 
-modules:
-  - name: shiggy
-    buildsystem: meson
-    builddir: false
-    config-opts:
-      - '--prefix=/app/share'
-    sources:
-      - type: git
-        url: 'https://github.com/4jcraft/shiggy'
-        branch: main
-
   - name: 4jcraft
     buildsystem: meson
     builddir: false
@@ -29,6 +18,7 @@ modules:
       - '--prefix=/app/share'
     modules:
       - shared-modules/glu/glu-9.json
+      - shiggy.yml
     post-install:
       - install -Dm755 /app/share/Minecraft.Client /app/bin/Minecraft.Client
 
